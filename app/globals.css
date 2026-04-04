@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b2e33;
+  --panel: #15363b;
+  --ink: #b8e3e9;
+  --line: #4f7c82;
+  --home: #1356f5;
+  --away: #e63429;
+  --field-dark: #2f7d3b;
+  --field-light: #3c9548;
+  --font-ui:
+    "Avenir Next", "SF Pro Text", "Segoe UI", "Inter", "Helvetica Neue", Arial,
+    sans-serif;
+  --font-display:
+    "Avenir Next", "SF Pro Display", "Segoe UI", "Inter", "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-ui), "Avenir Next", "Segoe UI", sans-serif;
+  background: #0b2e33;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  min-height: 100vh;
+  padding: clamp(16px, 2.2vw, 30px);
+}
+
+a {
+  color: inherit;
+}
