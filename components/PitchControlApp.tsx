@@ -238,36 +238,36 @@ export function PitchControlApp() {
   const layoutClass =
     "mx-auto grid max-w-[1640px] items-start gap-8 grid-cols-1 min-[1100px]:grid-cols-[minmax(350px,390px)_1fr] min-[1100px]:[column-gap:2rem]";
   const panelClass =
-    "flex h-fit flex-col gap-4 rounded-[22px] border border-[#4F7C82] bg-[#0B2E33] p-7 shadow-[0_18px_34px_rgba(0,0,0,0.32),inset_0_1px_0_rgba(184,227,233,0.12)] backdrop-blur-[1px]";
+    "flex h-fit flex-col gap-4 rounded-[22px] border border-[#2A2A2A] bg-[#171717] p-7 shadow-[0_18px_34px_rgba(0,0,0,0.32),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-[1px]";
   const panelTitleClass =
-    "m-0 font-[var(--font-display)] text-[1.62rem] leading-tight tracking-[-0.02em] text-[#B8E3E9]";
+    "m-0 font-[var(--font-display)] text-[1.62rem] leading-tight tracking-[-0.02em] text-[#F3F3F3]";
   const panelCopyClass =
-    "m-0 max-w-prose text-[0.92rem] leading-[1.55] text-[#B8E3E9]";
+    "m-0 max-w-prose text-[0.92rem] leading-[1.55] text-[#CFCFCF]";
   const controlsClass =
-    "grid gap-3.5 rounded-[14px] border border-[#4F7C82] bg-[#12373d] p-4 shadow-[inset_0_1px_0_rgba(184,227,233,0.12)]";
+    "grid gap-3.5 rounded-[14px] border border-[#2A2A2A] bg-[#0B0B0B] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]";
   const labelClass =
-    "grid gap-2 border-b border-[#4F7C82] pb-3 text-[0.9rem] font-medium tracking-[0.01em] text-[#B8E3E9] last:border-b-0 last:pb-0";
+    "grid gap-2 border-b border-[#2A2A2A] pb-3 text-[0.9rem] font-medium tracking-[0.01em] text-[#F3F3F3] last:border-b-0 last:pb-0";
   const rangeClass = "controlRange";
   const buttonRowClass = "grid grid-cols-1 gap-3 sm:grid-cols-2";
   const primaryBtnClass =
-    "w-full cursor-pointer rounded-xl border border-[#4F7C82] bg-[#4F7C82] px-4 py-[0.82rem] text-[0.91rem] font-bold text-[#B8E3E9] shadow-[0_7px_16px_rgba(11,46,51,0.45)] transition duration-150 ease-out hover:-translate-y-[1px] hover:shadow-[0_10px_20px_rgba(11,46,51,0.52)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8E3E9]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B2E33]";
+    "w-full cursor-pointer rounded-xl border border-[#2A2A2A] bg-[#2A2A2A] px-4 py-[0.82rem] text-[0.91rem] font-bold text-[#F3F3F3] shadow-[0_7px_16px_rgba(0,0,0,0.45)] transition duration-150 ease-out hover:-translate-y-[1px] hover:shadow-[0_10px_20px_rgba(0,0,0,0.52)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F3F3F3]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]";
   const secondaryBtnClass =
-    "w-full cursor-pointer rounded-xl border border-[#93B1B5] bg-[#93B1B5] px-4 py-[0.82rem] text-[0.91rem] font-bold text-[#0B2E33] shadow-[0_7px_16px_rgba(11,46,51,0.35)] transition duration-150 ease-out hover:-translate-y-[1px] hover:shadow-[0_10px_20px_rgba(11,46,51,0.44)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8E3E9]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B2E33]";
+    "w-full cursor-pointer rounded-xl border border-[#F3F3F3] bg-[#F3F3F3] px-4 py-[0.82rem] text-[0.91rem] font-bold text-[#0B0B0B] shadow-[0_7px_16px_rgba(0,0,0,0.35)] transition duration-150 ease-out hover:-translate-y-[1px] hover:shadow-[0_10px_20px_rgba(0,0,0,0.44)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F3F3F3]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]";
   const noteClass =
-    "m-0 border-t border-[#4F7C82] pt-4 text-[0.78rem] leading-5 text-[#B8E3E9]";
+    "m-0 border-t border-[#2A2A2A] pt-4 text-[0.78rem] leading-5 text-[#CFCFCF]";
   const boardWrapClass = focusMode
-    ? "fixed inset-0 z-[100] flex items-center justify-center bg-[#0B2E33] p-3"
+    ? "fixed inset-0 z-[100] flex items-center justify-center bg-[#0B0B0B] p-3"
     : "min-w-0";
   const focusToolbarClass =
     "pointer-events-none absolute inset-x-[10px] top-[10px] z-10 flex items-start justify-between";
   const menuBtnClass =
-    "pointer-events-auto cursor-pointer rounded-[10px] border border-[#4F7C82] bg-[#12373d] px-[0.65rem] py-[0.4rem] font-bold text-[#B8E3E9] shadow-[0_8px_16px_rgba(0,0,0,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8E3E9]/70";
+    "pointer-events-auto cursor-pointer rounded-[10px] border border-[#2A2A2A] bg-[#171717] px-[0.65rem] py-[0.4rem] font-bold text-[#F3F3F3] shadow-[0_8px_16px_rgba(0,0,0,0.24)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F3F3F3]/70";
   const focusMenuClass =
-    "absolute left-3.5 top-[66px] z-20 max-h-[calc(100vh-84px)] w-[min(340px,calc(100vw-28px))] overflow-auto rounded-[14px] border border-[#4F7C82] bg-[#12373d] p-3 shadow-[0_18px_36px_rgba(0,0,0,0.26)] backdrop-blur-[6px]";
+    "absolute left-3.5 top-[66px] z-20 max-h-[calc(100vh-84px)] w-[min(340px,calc(100vw-28px))] overflow-auto rounded-[14px] border border-[#2A2A2A] bg-[#171717] p-3 shadow-[0_18px_36px_rgba(0,0,0,0.26)] backdrop-blur-[6px]";
   const focusMenuHeaderClass = "mb-2.5 flex items-center justify-between";
-  const focusMenuTitleClass = "m-0 text-base text-[#B8E3E9]";
+  const focusMenuTitleClass = "m-0 text-base text-[#F3F3F3]";
   const focusMenuCloseClass =
-    "cursor-pointer rounded-lg border border-[#93B1B5] bg-[#93B1B5] px-2.5 py-[0.35rem] font-bold text-[#0B2E33] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8E3E9]/70";
+    "cursor-pointer rounded-lg border border-[#F3F3F3] bg-[#F3F3F3] px-2.5 py-[0.35rem] font-bold text-[#0B0B0B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F3F3F3]/70";
 
   return (
     <div className={shellClass}>
@@ -312,7 +312,7 @@ export function PitchControlApp() {
                 />
               </label>
 
-              <div className="h-px bg-[#2a3d5e]" />
+              <div className="h-px bg-[#2A2A2A]" />
 
               <label className={labelClass}>
                 <span>Reaction Time ({params.reactionTime.toFixed(2)} s)</span>
@@ -332,7 +332,7 @@ export function PitchControlApp() {
                 />
               </label>
 
-              <div className="h-px bg-[#2a3d5e]" />
+              <div className="h-px bg-[#2A2A2A]" />
 
               <label className={labelClass}>
                 <span>Time Decay Sigma ({params.sigma.toFixed(2)})</span>
@@ -352,7 +352,7 @@ export function PitchControlApp() {
                 />
               </label>
 
-              <div className="h-px bg-[#2a3d5e]" />
+              <div className="h-px bg-[#2A2A2A]" />
 
               <label className={labelClass}>
                 <span>Grid Size ({params.minCell.toFixed(1)} m)</span>

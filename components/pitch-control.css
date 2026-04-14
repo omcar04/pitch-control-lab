@@ -3,7 +3,7 @@
   height: 6px;
   appearance: none;
   border-radius: 999px;
-  background: #b8e3e9;
+  background: #f3f3f3;
 }
 
 .controlRange::-webkit-slider-thumb {
@@ -11,8 +11,8 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 2px solid #eaf6ff;
-  background: #0b2e33;
+  border: 2px solid #f3f3f3;
+  background: #0b0b0b;
   box-shadow: 0 2px 8px rgba(7, 15, 38, 0.45);
 }
 
@@ -20,8 +20,8 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 2px solid #eaf6ff;
-  background: #0b2e33;
+  border: 2px solid #f3f3f3;
+  background: #0b0b0b;
   box-shadow: 0 2px 8px rgba(7, 15, 38, 0.45);
 }
 

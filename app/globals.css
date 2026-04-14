@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0b2e33;
-  --panel: #15363b;
-  --ink: #b8e3e9;
-  --line: #4f7c82;
+  --bg: #0b0b0b;
+  --panel: #171717;
+  --ink: #f3f3f3;
+  --line: #2a2a2a;
   --home: #1356f5;
   --away: #e63429;
   --field-dark: #2f7d3b;
@@ -26,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-ui), "Avenir Next", "Segoe UI", sans-serif;
-  background: #0b2e33;
+  background: #0b0b0b;
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
